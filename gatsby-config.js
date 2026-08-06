@@ -32,10 +32,10 @@ if (foundPath) {
 
 module.exports = {
     siteMetadata: {
-        title: "\MARKROX.DEV",
-        url: "https://www.markrox.dev",
-        siteUrl: "https://www.markrox.dev",
-        twitterUsername: "@markroxdotdev",
+        title: "\MARKROX.AI",
+        url: "https://www.markrox.ai",
+        siteUrl: "https://www.markrox.ai",
+        twitterUsername: "@markroxai",
         author: "Mark Roxberry",
         keywords: ["roxberry", "journal", "development"],
         featuredTags: ["AppliedAI", "AI", "architecture", "development", "performance", "OWASP","robotics", "security", "privacy", "apple"],
