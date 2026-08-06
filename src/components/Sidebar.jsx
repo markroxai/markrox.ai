@@ -58,7 +58,7 @@ const SideBar = ({ onHide }) => {
             </section>
             <section>
                 <h2>Mark Roxberry</h2>
-                <span><a href="https://www.waveseeker.com">@ Database Solutions</a></span><br /><br />
+                {/* <span><a href="https://www.waveseeker.com">@ Database Solutions</a></span><br /><br /> */}
                 <span>AI Security Architect | OWASP Leader | Secure GenAI &amp; Multi-Agent Systems | CISSP, CEH</span><br />
                 <Social />
                 {/* Subscribe button */}
