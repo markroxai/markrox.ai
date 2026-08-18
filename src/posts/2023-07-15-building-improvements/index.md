@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Building Improvements"
-subtitle: "As Built and To Be Built for markrox.dev"
+subtitle: "As Built and To Be Built for markrox.ai"
 comments: true
 date: 2023-07-15 23:00:00
 author: Mark Roxberry
@@ -18,7 +18,7 @@ featured: true
 
 ## Building Improvements
 
-This post describes recent work and planned work on this site, an update for 2023 of some basic features.  Taking a look at some things that I want to work on in the near future, I realized that I could use markrox.dev as a project hub.
+This post describes recent work and planned work on this site, an update for 2023 of some basic features.  Taking a look at some things that I want to work on in the near future, I realized that I could use markrox.ai as a project hub.
 
 ### Just Added
 

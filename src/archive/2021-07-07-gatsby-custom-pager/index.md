@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rolled My Own Pager
-subtitle: Notes for the pager implementation on markrox.dev
+subtitle: Notes for the pager implementation on markrox.ai
 comments: true
 date: 2021-07-07 01:00:00
 author: Mark Roxberry
@@ -17,7 +17,7 @@ featured: true
 
 # Infinity scroll or pager
 
-I opted to implement a pager on markrox.dev
+I opted to implement a pager on markrox.ai
 
 ## Pager.js
 

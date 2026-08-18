@@ -1,5 +1,5 @@
 {
-    "name": "markrox.dev",
+    "name": "markrox.ai",
     "private": true,
     "description": "markRox.dev on Gatsby",
     "version": "0.2.0",
@@ -54,12 +54,9 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/roxberry/markrox.dev.git"
+        "url": "https://github.com/roxberry/markrox.ai.git"
     },
     "bugs": {
-        "url": "https://github.com/roxberry/markrox.dev/issues"
-    },
-    "devDependencies": {
-        "baseline-browser-mapping": "^2.10.13"
+        "url": "https://github.com/roxberry/markrox.ai/issues"
     }
 }

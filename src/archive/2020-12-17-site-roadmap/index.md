@@ -34,7 +34,7 @@ Using Github actions and Azure deployment center, I can quickly deploy site chan
 TODO: One note, I hit a snag with Azure running out of space after I made a bunch of pushes to my repo.  It looks like the **.repository** directory increases each time, maybe the **.git** directory?  I will need to figure that out.
 
 ## Continuous performance improvements
-markrox.dev is hitting an outstanding **95** on mobile and a **99** on desktop on the Pagespeed site (using [Lighthouse](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.markrox.dev&tab=desktop) /  [Gtmetrix.com](https://gtmetrix.com) ). Both of these tools (Gtmetrix uses Lighthouse) I made a few changes to get this score.  
+markrox.ai is hitting an outstanding **95** on mobile and a **99** on desktop on the Pagespeed site (using [Lighthouse](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.markrox.ai&tab=desktop) /  [Gtmetrix.com](https://gtmetrix.com) ). Both of these tools (Gtmetrix uses Lighthouse) I made a few changes to get this score.  
 
 Following the tools "opportunities", I made several changes to the content of my website and process to build it. I added a grunt step to compress my images. I used "uncss" and "critical" to slim down linked styles.  I used preloads, preconnects, async calls to speed up getting assets to get the "First Contentful Paint" as soon as possible.
 

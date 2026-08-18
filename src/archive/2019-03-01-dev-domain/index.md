@@ -1,11 +1,11 @@
 ---
 layout:     post
-title:      markrox.dev is live
+title:      markrox.ai is live
 subtitle:   Why .dev and security is your friend.
 comments:   true
 date:       2019-03-01 15:30:00
 author:     Mark Roxberry
-excerpt:    Switching Roxberry.PRO to markrox.dev - Secure Comms FTW.
+excerpt:    Switching Roxberry.PRO to markrox.ai - Secure Comms FTW.
 tags:       [domains, security]
 categories:
     - domains
@@ -19,7 +19,7 @@ featured:   true
 
 # .DEV sites are available as of 2/28/2019
 
-The .DEV TLD was made available for domain name registrars yesterday 2/28 and today I registered markrox.dev and a few others.
+The .DEV TLD was made available for domain name registrars yesterday 2/28 and today I registered markrox.ai and a few others.
 
 According to Google, ".dev is a secure domain for developers and technology. From tools to platforms, programming languages to blogs, .dev is a home for all the interesting things that you build." from the [.dev](https://get.dev/) site.
 
@@ -49,4 +49,4 @@ TensorFlow Hub - [tfhub.dev](https://tfhub.dev)
 
 And ...
 
-markrox.dev - [Here](https://markrox.dev)
+markrox.ai - [Here](https://markrox.ai)

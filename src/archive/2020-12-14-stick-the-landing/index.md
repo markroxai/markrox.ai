@@ -5,7 +5,7 @@ subtitle:   Scoring a 99 on my GTmetrix has been fun
 comments:   true
 date:       2020-12-14 23:00:00
 author:     Mark Roxberry
-excerpt:    markrox.dev is scoring a 99 on the GTmetrix performance report.  I documented a few of the things that I did to optimize the site.
+excerpt:    markrox.ai is scoring a 99 on the GTmetrix performance report.  I documented a few of the things that I did to optimize the site.
 tags:       [performance, projects]
 categories:
     - performance

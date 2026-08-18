@@ -87,7 +87,7 @@ module.exports = {
                     {
                         resolve: `gatsby-remark-twitter-cards`,
                         options: {
-                            title: "\MARKROX.DEV",
+                            title: "\MARKROX.AI",
                             separator: "|",
                             author: "Mark Roxberry",
                             background: require.resolve("./src/images/profile.1.jpg"),

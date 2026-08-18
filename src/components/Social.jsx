@@ -26,7 +26,7 @@ const Social = () =>  {
                     <a href="https://github.com/roxberry"><FontAwesomeIcon icon={['fab', 'github']} /></a>
                 </li>
                 <li>
-                    <a href="mailto:blog@markrox.dev"><FontAwesomeIcon icon={['fas', 'envelope']} /></a>
+                    <a href="mailto:blog@markrox.ai"><FontAwesomeIcon icon={['fas', 'envelope']} /></a>
                 </li>
             </ul>
         </div>
