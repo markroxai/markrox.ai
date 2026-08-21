@@ -65,7 +65,7 @@ The environment would contain synthetic customer records, internal documents, em
 
 Every consequential action would remain simulated. Payments would move fake currency. Email would stay inside a local mailbox. Documents would contain synthetic records and canary secrets. Code-execution exercises would run in disposable, non-privileged sandboxes.
 
-A companion attacker service, **GoatWolf**, would host malicious documents and web pages, receive captured email, record callback requests, present fake tools, and simulate rogue agents. Like WebWolf, it would make the distinction between the target and attacker infrastructure explicit.
+A companion attacker service, **AgentWolf**, would host malicious documents and web pages, receive captured email, record callback requests, present fake tools, and simulate rogue agents. Like WebWolf, it would make the distinction between the target and attacker infrastructure explicit.
 
 ```mermaid
 %%{init: {"theme": "dark", "flowchart": {"curve": "basis"}}}%%
@@ -84,8 +84,8 @@ flowchart LR
         Agents --> Evidence
     end
 
-    GoatWolf["GoatWolf attacker services"] --> Agent
-    Agent --> GoatWolf
+    AgentWolf["AgentWolf attacker services"] --> Agent
+    Agent --> AgentWolf
     Evidence --> Oracle["Deterministic success oracle"]
     Oracle --> Result["Vulnerable, secure, failed, or inconclusive"]
 ```
@@ -100,7 +100,7 @@ If a test succeeds only because a reviewer thinks the model's response "looks co
 
 A scenario could define success when:
 
-- a canary secret reaches the GoatWolf mailbox,
+- a canary secret reaches the AgentWolf mailbox,
 - an unauthorized tool is invoked,
 - a protected record is returned,
 - persistent memory is modified,
@@ -168,7 +168,7 @@ Safe isolation cannot be left to a warning in the README. It belongs in the arch
 - deny access to the host filesystem and container runtime,
 - run dangerous actions in disposable, non-privileged sandboxes,
 - enforce CPU, memory, process, token, model-call, tool-call, and time budgets,
-- route attacker callbacks to local GoatWolf services,
+- route attacker callbacks to local AgentWolf services,
 - require an explicit unsafe-development setting before non-loopback exposure, and
 - make reset and complete data destruction simple.
 
@@ -178,7 +178,7 @@ WebGoat itself warns users that deliberately insecure applications require isola
 
 The first release does not need every risk category. It needs one complete vertical slice that proves the architecture.
 
-A coherent initial version could include one agent host, a deterministic fake model, an optional real-model adapter, mock email, documents, memory, vector storage, outbound HTTP, GoatWolf capture services, a reset API, and complete trace evidence.
+A coherent initial version could include one agent host, a deterministic fake model, an optional real-model adapter, mock email, documents, memory, vector storage, outbound HTTP, AgentWolf capture services, a reset API, and complete trace evidence.
 
 Five scenarios would exercise the central boundaries:
 
