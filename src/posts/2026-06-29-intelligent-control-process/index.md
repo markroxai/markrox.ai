@@ -22,7 +22,7 @@ Disclaimer: It's a work in progress, we may have better tools and solutions in t
 
 [Intelligent Control Process Presentation](/presentations/Intelligent_Control_Process.pdf)
 
-View an implementation of the .control process, see [pizzint-demo](https://github.com/roxatdsi/pizzint-demo)
+View an implementation of the paired-repository control process: [pizzint-demo](https://github.com/roxatdsi/pizzint-demo) and [pizzint-demo.control](https://github.com/roxatdsi/pizzint-demo.control)
 
 ![alt text](2026-06-29_11_01-12.png)
 
@@ -260,9 +260,9 @@ Unresolved work moves into the next-session queue. The backlog remains prioritiz
 
 This creates a continuous delivery rhythm instead of a series of isolated bursts.
 
-## A Portable `.control/` Model
+## An Authoritative `.control` Repository Model
 
-The process can begin with governance files at the repository root:
+The process can begin with governance files at the application repository root:
 
 ```text
 README.md
@@ -274,26 +274,40 @@ CHANGE_TYPES/
 REVIEW_LOOPS/
 ```
 
-The future-state model moves these artifacts into a portable `.control/` directory:
+That works as a starting point, but it creates a durability problem. When control artifacts live inside the source repository, every working branch can also change the `.control` state. A feature branch, recovery branch, or experimental branch may legitimately need different application code, but the team still needs one authoritative control record.
+
+The stronger model is a paired repository:
 
 ```text
-.control/
-├── README.md
-├── SESSION_START.md
-├── CHANGE_TRACKER.md
-├── DECISION_LOG.md
-├── NEXT_SESSION_ISSUES.md
-├── CHANGE_TYPES/
-└── REVIEW_LOOPS/
-tests/
-src/
-infra/
-docs/
+project/
+├── src/
+├── tests/
+├── infra/
+└── docs/
+
+project.control/
+└── .control/
+    ├── README.md
+    ├── SESSION_START.md
+    ├── CHANGE_TRACKER.md
+    ├── DECISION_LOG.md
+    ├── NEXT_SESSION_ISSUES.md
+    ├── CHANGE_TYPES/
+    └── REVIEW_LOOPS/
 ```
 
-This keeps governance close to the work without mixing control artifacts into the application structure. More importantly, it creates a reusable model that can move between projects while preserving the team's delivery expectations.
+The application repository contains the product. The control repository contains the governance system for that product. The `.control` directory remains portable, but its authority comes from living in a separate repository with its own history, permissions, review rules, and release rhythm.
 
-The directory is not the process by itself. It is the durable interface through which humans, automation, and AI assistants participate in the same operating model.
+A concrete implementation looks like this:
+
+```text
+pizzint-demo/
+pizzint-demo.control/
+```
+
+This keeps governance close to the work without making it subordinate to every application branch. More importantly, it creates a reusable model that can move between projects while preserving the team's delivery expectations and a stable control history.
+
+The repository is not the process by itself. It is the durable interface through which humans, automation, and AI assistants participate in the same operating model.
 
 ## The Core Principles
 
