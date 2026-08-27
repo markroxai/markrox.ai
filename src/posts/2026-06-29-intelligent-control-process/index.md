@@ -20,7 +20,7 @@ Question posed to the consultants @DSI - "Interested in hearing who's been using
 
 Disclaimer: It's a work in progress, we may have better tools and solutions in the future.  The emphasis is on human responsibility and risk management.
 
-[Intelligent Control Process Presentation](Intelligent_Control_Process.pdf)
+[Intelligent Control Process Presentation](/presentations/Intelligent_Control_Process.pdf){:target="_blank"}
 
 ## Control Should Improve Delivery, Not Slow It Down
 
