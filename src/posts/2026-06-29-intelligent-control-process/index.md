@@ -16,7 +16,7 @@ featured: true
 pinned: true
 ---
 
-Question posed to the consultants @DSI - "Interested in hearing who's been using AI to assist with development and which platforms you've gained confidence in."  I replied with a summary of how I am using AI, but I decided to write a post of my process, and hopefully a process our clients and our clients can adopt.
+Question posed to the consultants @DSI - "Interested in hearing who's been using AI to assist with development and which platforms you've gained confidence in."  I replied with a summary of how I am using AI, but I decided to write a post of my process, and hopefully a process our team and our clients can adopt.
 
 Disclaimer: It's a work in progress, we may have better tools and solutions in the future.  The emphasis is on human responsibility and risk management.
 
