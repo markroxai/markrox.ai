@@ -22,6 +22,10 @@ Disclaimer: It's a work in progress, we may have better tools and solutions in t
 
 [Intelligent Control Process Presentation](/presentations/Intelligent_Control_Process.pdf)
 
+View an implementation of the .control process, see [pizzint-demo](https://github.com/roxatdsi/pizzint-demo)
+
+![alt text](2026-06-29_11_01-12.png)
+
 ## Control Should Improve Delivery, Not Slow It Down
 
 AI-assisted delivery can make a team faster, but speed without structure creates a different class of risk. Work begins before its purpose is captured. Review feedback disappears into chat history. Decisions are made without preserving the reasoning behind them. Tests prove the happy path while recovery remains undefined. A session ends, and the next person has to reconstruct its state from fragments.
