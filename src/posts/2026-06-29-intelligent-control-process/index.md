@@ -103,7 +103,7 @@ Branch names communicate intent:
 
 When a change identifier exists, the branch should include the primary `CHG` ID.
 
-The Issue Tracker is the umbrella system used to record and coordinate the work. Depending on the project, that may be GitHub, TeamCity, or a custom issue or ticket system. The process does not depend on one vendor; it depends on one authoritative record.
+The Issue Tracker is the umbrella system used to record and coordinate the work. Depending on the project, that may be GitHub, Jira, or a custom issue or ticket system. The process does not depend on one vendor; it depends on one authoritative record.
 
 Before coding:
 
