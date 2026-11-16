@@ -12,20 +12,9 @@ const Blog = (props) => {
     const post = props.data.markdownRemark
     const postImage = post.frontmatter.postimage
     // const seoImage = null;
-    const seoImage = postImage && postImage.src
-        ? postImage.src.childImageSharp.resize
-        : null
-    const pathName = props.location.pathname
-
     return (
 
         <Layout>
-            <Seo
-                title={post.frontmatter.title}
-                description={post.frontmatter.description || post.excerpt}
-                image={seoImage}
-                pathname={pathName}>
-            </Seo>
             <section>
                 <h1 className="postTitle">
                     {post.frontmatter.title}
@@ -111,3 +100,20 @@ export const query = graphql`
 `
 
 export default Blog
+
+export const Head = ({ data, location }) => {
+    const post = data.markdownRemark
+    const postImage = post.frontmatter.postimage
+    const seoImage = postImage && postImage.src
+        ? postImage.src.childImageSharp.resize
+        : null
+
+    return (
+        <Seo
+            title={post.frontmatter.title}
+            description={post.frontmatter.description || post.excerpt}
+            image={seoImage}
+            pathname={location.pathname}
+        />
+    )
+}

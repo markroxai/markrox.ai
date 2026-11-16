@@ -8,7 +8,6 @@ import { StaticImage } from "gatsby-plugin-image"
 const ProjectsPage = () => {
     return (
         <Layout>
-            <Seo title="Projects" />
             <section>
                 <h1 className="sectionTitle">Projects</h1>
                 <Projects />
@@ -18,3 +17,5 @@ const ProjectsPage = () => {
 }
 
 export default ProjectsPage
+
+export const Head = () => <Seo title="Projects" />

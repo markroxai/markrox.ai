@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/Layout"
 
 // Components
-import { Helmet } from "react-helmet"
 import { Link, navigate, graphql } from "gatsby"
 import SearchPosts from "../components/SearchPosts"
 
@@ -15,7 +14,6 @@ const SearchPage = (props) => {
 
     return (
         <Layout>
-        <Helmet title="Search" />
             <div>
                 <h1>Search</h1>
                 <SearchPosts
@@ -72,3 +70,5 @@ export const query = graphql`
   }
 `
 export default SearchPage
+
+export const Head = () => <title>Search</title>

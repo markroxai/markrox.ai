@@ -43,7 +43,6 @@ module.exports = {
     },
     plugins: [
         "gatsby-plugin-sass",
-        "gatsby-plugin-react-helmet",
         "gatsby-plugin-image",
         "gatsby-transformer-sharp",
         "gatsby-plugin-sharp",
@@ -134,7 +133,6 @@ module.exports = {
                   edges {
                     node {
                       excerpt
-                      html
                       fields { slug }
                       frontmatter {
                         title

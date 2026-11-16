@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 
 // Utilities
@@ -11,13 +10,9 @@ const tagSlug = (tag) => tag.toLowerCase().replace(/\s+/g, '-')
 const TagsPage = ({
   data: {
     allMarkdownRemark: { group },
-    site: {
-      siteMetadata: { title },
-    },
   },
 }) => (
   <div>
-    <Helmet title={title} />
     <div>
       <h1>Tags</h1>
       <ul>
@@ -52,6 +47,8 @@ TagsPage.propTypes = {
 }
 
 export default TagsPage
+
+export const Head = ({ data }) => <title>{data.site.siteMetadata.title}</title>
 
 export const pageQuery = graphql`
   query {

@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 function Seo({ description = '' , lang = 'en', meta = [], image: metaImage, title, pathname }) {
@@ -28,23 +27,11 @@ function Seo({ description = '' , lang = 'en', meta = [], image: metaImage, titl
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`${site.siteMetadata.title} - %s`}
-      link={
-        canonical
-          ? [
-              {
-                rel: "canonical",
-                href: canonical,
-              },
-            ]
-          : []
-      }
-      meta={[
+    <>
+      <html lang={lang} />
+      <title>{`${site.siteMetadata.title} - ${title}`}</title>
+      {canonical && <link rel="canonical" href={canonical} />}
+      {[
         {
           name: `description`,
           content: metaDescription,
@@ -105,8 +92,9 @@ function Seo({ description = '' , lang = 'en', meta = [], image: metaImage, titl
                 },
               ]
         )
-        .concat(meta)}
-    />
+        .concat(meta)
+        .map((attributes, index) => <meta key={index} {...attributes} />)}
+    </>
   )
 }
 

@@ -36,7 +36,6 @@ const Tags = ({ pageContext, data }) => {
     // }
     return (
         <Layout>
-            <Seo title={tag} />
             <section>
                 <h1 className="sectionTitle"><FontAwesomeIcon icon={['fas', 'tags']} />&nbsp;&nbsp;{tagHeader}</h1>
                 <div className="flexbox">
@@ -150,3 +149,5 @@ export const query = graphql`
   }
 `
 export default Tags
+
+export const Head = ({ pageContext }) => <Seo title={pageContext.tag} />

@@ -75,7 +75,6 @@ class BlogIndex extends React.Component {
         }
         return (
             <Layout location={this.props.location} title={siteTitle}>
-                <Seo title="Welcome!" />
                 <AmazonSiteStripe
                     amazonProducts={amazonProducts}
                     layout="horizontal"
@@ -203,6 +202,8 @@ class BlogIndex extends React.Component {
 
 export default BlogIndex
 
+export const Head = () => <Seo title="Welcome!" />
+
 export const pageQuery = graphql`
   query blogPageQuery($skip: Int!, $limit: Int!) {
     site {
@@ -216,7 +217,6 @@ export const pageQuery = graphql`
         ) {
             edges {
                 node {
-                    excerpt
                     frontmatter {
                         title
                         subtitle
@@ -255,7 +255,6 @@ export const pageQuery = graphql`
         ) {
       edges {
         node {
-          excerpt
           frontmatter {
             title
             subtitle

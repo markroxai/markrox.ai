@@ -6,7 +6,6 @@ import * as styles from "../styles/contact.module.scss"
 const ContactPage = () => {
     return (
         <Layout>
-            <Seo title="Contact Me" />
             <section>
                 <h1 className="sectionTitle">Contact Me</h1>
                     <div className={styles.contactFormWrapper}>
@@ -68,3 +67,5 @@ const ContactPage = () => {
 }
 
 export default ContactPage
+
+export const Head = () => <Seo title="Contact Me" />

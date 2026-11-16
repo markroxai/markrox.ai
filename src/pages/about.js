@@ -14,7 +14,6 @@ const AboutPage = () => {
 
     return (
         <Layout>
-            <Seo title="About Me" />
             <section>
                 <h1 className="sectionTitle">About Me</h1>
                 <ReactMarkdown>{markdown}</ReactMarkdown>
@@ -24,3 +23,5 @@ const AboutPage = () => {
 }
 
 export default AboutPage
+
+export const Head = () => <Seo title="About Me" />

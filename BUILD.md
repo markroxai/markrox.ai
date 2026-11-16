@@ -7,6 +7,10 @@ The Site Build CI workflow skips Puppeteer's automatic browser download during
 `npm ci`, then installs Chrome explicitly into a fresh per-run cache before
 building the site.
 
+`gatsby-plugin-sass` uses a scoped `sass-loader` override to use Dart Sass's
+modern JavaScript API. Recheck the override when upgrading Gatsby or its Sass
+plugin, and verify both production and development builds after changing it.
+
 ## Puppeteer / Playwright Missing Browser Binary
 
 If you get an error like:

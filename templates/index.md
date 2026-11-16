@@ -2,7 +2,7 @@
 layout: post
 title: {{title}}
 subtitle: "Quote - Author"
-comments: true|false
+comments: true
 date: {{postDate}}
 author: Mark Roxberry
 excerpt: {{Excerpt to show on the frontpage}}
@@ -12,8 +12,8 @@ categories:
 postimage:
   src: "post.png"
   alt: {{describe blog post}}
-featured: true|false 
-pinned: true|false
+featured: true
+pinned: false
 
 ---
 ## {{header1}}
