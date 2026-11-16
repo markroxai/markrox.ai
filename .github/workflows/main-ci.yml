@@ -73,12 +73,15 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-public-gatsby
           
-      - name: run npm install and build # go to temp folder and run npm build to create files.
+      - name: Install dependencies and build
+        working-directory: temp
+        env:
+          PUPPETEER_CACHE_DIR: ${{ runner.temp }}/puppeteer-${{ github.run_id }}-${{ github.run_attempt }}
         run: |
-          cd temp
-          npm install
-          node node_modules/puppeteer/install.mjs
-          npm run build:incremental
+          PUPPETEER_SKIP_DOWNLOAD=true npm ci
+          ./node_modules/.bin/puppeteer browsers install chrome
+          node -e "require('fs').accessSync(require('puppeteer').executablePath(), require('fs').constants.X_OK)"
+          npm run build
 
       - name: move files # move the dist files into root dir and remove others.
         if: ${{ success() }}

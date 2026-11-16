@@ -1,5 +1,12 @@
 # BUILD notes
 
+Use Node.js 24.22.3 as specified in `.nvmrc`. Install dependencies with `npm ci`
+and build the site with `npm run build`.
+
+The Site Build CI workflow skips Puppeteer's automatic browser download during
+`npm ci`, then installs Chrome explicitly into a fresh per-run cache before
+building the site.
+
 ## Puppeteer / Playwright Missing Browser Binary
 
 If you get an error like:
