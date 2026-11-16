@@ -66,6 +66,7 @@
         "lmdb@2.5.2": true,
         "lmdb@2.5.3": true,
         "msgpackr-extract@3.0.3": true,
+        "puppeteer@24.43.1": true,
         "@parcel/watcher@2.5.1": true
     }
 }
