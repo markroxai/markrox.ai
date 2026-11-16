@@ -50,7 +50,7 @@
         "typography-theme-wordpress-2016": "^0.16.19"
     },
     "engines": {
-        "node": ">=22"
+        "node": ">=26.13.1"
     },
     "repository": {
         "type": "git",
@@ -58,5 +58,14 @@
     },
     "bugs": {
         "url": "https://github.com/roxberry/markrox.ai/issues"
+    },
+    "allowScripts": {
+        "sharp@0.32.6": true,
+        "gatsby@5.15.0": true,
+        "gatsby-cli@5.15.0": true,
+        "lmdb@2.5.2": true,
+        "lmdb@2.5.3": true,
+        "msgpackr-extract@3.0.3": true,
+        "@parcel/watcher@2.5.1": true
     }
 }
