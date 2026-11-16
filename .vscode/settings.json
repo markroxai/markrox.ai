@@ -1,6 +1,5 @@
 {
     "todo-tree.tree.scanMode": "workspace",
-    "peacock.color": "#42b883",
     "cSpell.words": [
         "Microservices",
         "postimage",
@@ -26,22 +25,19 @@
     "workbench.colorCustomizations": {
         "commandCenter.border": "#15202b99",
         "commandCenter.foreground": "#15202b",
-        "editorGroup.border": "#65c89b",
         "sash.hoverBorder": "#65c89b",
-        "tab.activeBorder": "#65c89b",
-        "titleBar.activeBackground": "#42b883",
-        "titleBar.activeForeground": "#15202b",
-        "titleBar.border": "#42b883",
-        "titleBar.inactiveBackground": "#42b88399",
-        "titleBar.inactiveForeground": "#15202b99",
         "statusBar.background": "#42b883",
-        "statusBar.border": "#42b883",
-        "statusBar.debuggingBackground": "#b84277",
-        "statusBar.debuggingBorder": "#b84277",
-        "statusBar.debuggingForeground": "#e7e7e7",
+        "statusBar.debuggingBackground": "#42b883",
+        "statusBar.debuggingForeground": "#15202b",
         "statusBar.foreground": "#15202b",
+        "statusBar.inactiveBackground": "#42b883",
         "statusBarItem.hoverBackground": "#359268",
         "statusBarItem.remoteBackground": "#f0e8f7",
-        "statusBarItem.remoteForeground": "#15202b"
+        "statusBarItem.remoteForeground": "#15202b",
+        "titleBar.activeBackground": "#42b883",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#42b88399",
+        "titleBar.inactiveForeground": "#15202b99"
     },
+    "peacock.color": "#42b883",
 }

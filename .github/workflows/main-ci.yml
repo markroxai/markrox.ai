@@ -36,6 +36,11 @@ jobs:
           ref: main
           path: temp
           persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: temp/.nvmrc
           
       - name: Cache node modules
         uses: actions/cache@v4

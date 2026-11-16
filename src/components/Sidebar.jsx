@@ -76,6 +76,9 @@ const SideBar = ({ onHide }) => {
             <section>
                 <a href="https://github.com/roxberry/gatsby-roxberry/actions/workflows/main-ci.yml"><img src="https://github.com/roxberry/gatsby-roxberry/actions/workflows/main-ci.yml/badge.svg" width="170px" height="20px" alt="markrox.ai CI" /></a>
             </section>
+            <section>
+                <a href="https://labs.markrox.ai" target="_blank" rel="noreferrer">Labs.MarkRox.AI</a>
+            </section>
             <Categories />
             <Footer />
         </aside>
